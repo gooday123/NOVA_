@@ -1,0 +1,97 @@
+{
+  "name": "nova",
+  "version": "1.0.0",
+    "dependencies": [
+        {
+            "name": "gtest",
+            "version>=": "1.16.0",
+            "default-features": true
+        },
+        {
+            "name": "qt5-base",
+            "version>=": "5.15.6",
+            "default-features": true
+        },
+        {
+            "name": "boost-log",
+            "version>=": "1.83.0",
+            "default-features": true
+        },
+        {
+            "name": "yaml-cpp",
+            "version>=": "0.8.0",
+            "default-features": true
+        },
+        {
+            "name": "glaze",
+            "version>=": "5.0.0",
+            "default-features": true
+        },
+        {
+            "name": "simdjson",
+            "version>=": "3.12.2",
+            "default-features": true
+        },
+        {
+            "name": "yyjson",
+            "version>=": "0.10.0",
+            "default-features": true
+        },
+        {
+            "name": "daw-json-link",
+            "version>=": "3.29.2",
+            "default-features": true
+        },
+        {
+            "name": "boost-json",
+            "version>=": "1.87.0",
+            "default-features": true
+        },
+        {
+            "name": "rapidjson",
+            "version>=": "2023-07-17#2",
+            "default-features": true
+        },
+        {
+            "name": "nlohmann-json",
+            "version>=": "3.11.2",
+            "default-features": true
+        },
+        {
+            "name": "boost-asio",
+            "version>=": "1.87.0",
+            "default-features": true
+        },
+        {
+            "name": "boost-beast",
+            "version>=": "1.87.0",
+            "default-features": true
+        },
+        {
+            "name": "curl",
+            "version>=": "8.12.0",
+            "default-features": true
+        },
+        {
+            "name": "cpp-httplib",
+            "version>=": "0.18.5",
+            "default-features": true
+        },
+        {
+            "name": "drogon",
+            "version>=": "1.9.2",
+            "default-features": true
+        },
+        {
+            "name": "cpr",
+            "version>=": "1.8.1",
+            "default-features": true
+        },
+        {
+            "name": "openssl",
+            "version>=": "3.4.1",
+            "default-features": true
+        }
+    ],
+  "builtin-baseline": "300239058e33420acd153135b3f6e6b187828992"
+}
