@@ -1,0 +1,43 @@
+﻿{
+  "version": 3,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 20
+  },
+  "configurePresets": [
+    {
+      "name": "ninja-msvc-x64-debug",
+      "displayName": "Ninja + MSVC x64 Debug",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/out/build/${presetName}",
+      "installDir": "${sourceDir}/out/install/${presetName}",
+        "cacheVariables": {
+            "CMAKE_BUILD_TYPE": "Debug",
+            "CMAKE_C_COMPILER": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/cl.exe",
+            "CMAKE_CXX_COMPILER": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/cl.exe",
+            "CMAKE_TOOLCHAIN_FILE": "C:/Users/Kairos/source/repos/vcpkg/scripts/buildsystems/vcpkg.cmake",
+            "VCPKG_TARGET_TRIPLET": "x64-windows-static",
+            "VCPKG_FEATURE_FLAGS": "manifests"
+        }
+    },
+    {
+      "name": "ninja-msvc-x64-release",
+      "displayName": "Ninja + MSVC x64 Release",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/out/build/${presetName}",
+      "installDir": "${sourceDir}/out/install/${presetName}",
+        "cacheVariables": {
+            "CMAKE_BUILD_TYPE": "Release",
+            "CMAKE_MSVC_RUNTIME_LIBRARY": "MultiThreaded", // (MT - Release 모드)
+            "CMAKE_C_COMPILER": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/cl.exe",
+            "CMAKE_CXX_COMPILER": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/cl.exe",
+            "CMAKE_TOOLCHAIN_FILE": "C:/Users/Kairos/source/repos/vcpkg/scripts/buildsystems/vcpkg.cmake",
+            "VCPKG_TARGET_TRIPLET": "x64-windows-static",
+            "VCPKG_FEATURE_FLAGS": "manifests",
+            "CMAKE_CXX_FLAGS_RELEASE": "/O2 /GL /arch:AVX2 /fp:fast /Oi /Ot /Gy /Gw /permissive- /GS- /GF /Gm- /Zc:inline /Zc:strictStrings /Zc:referenceBinding /Zc:rvalueCast /Zc:throwingNew",
+            "CMAKE_C_FLAGS_RELEASE": "/O2 /GL /arch:AVX2 /fp:fast /Oi /Ot /Gy /Gw /permissive- /GS- /GF /Gm- /Zc:inline /Zc:strictStrings /Zc:referenceBinding /Zc:rvalueCast /Zc:throwingNew",
+            "CMAKE_EXE_LINKER_FLAGS_RELEASE": "/LTCG /OPT:REF /OPT:ICF /INCREMENTAL:NO"
+        }
+    }
+  ]
+}
